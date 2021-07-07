@@ -1,0 +1,11 @@
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\bin\Debug\netcoreapp3.1\pooControledeNotas.exe
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\bin\Debug\netcoreapp3.1\pooControledeNotas.deps.json
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\bin\Debug\netcoreapp3.1\pooControledeNotas.runtimeconfig.json
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\bin\Debug\netcoreapp3.1\pooControledeNotas.runtimeconfig.dev.json
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\bin\Debug\netcoreapp3.1\pooControledeNotas.dll
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\bin\Debug\netcoreapp3.1\pooControledeNotas.pdb
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\obj\Debug\netcoreapp3.1\pooControledeNotas.csprojAssemblyReference.cache
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\obj\Debug\netcoreapp3.1\pooControledeNotas.AssemblyInfoInputs.cache
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\obj\Debug\netcoreapp3.1\pooControledeNotas.AssemblyInfo.cs
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\obj\Debug\netcoreapp3.1\pooControledeNotas.dll
+C:\Users\kaue\OneDrive - Bem Promotora de Vendas e Servicos SA\Documentos\Programação Orientada a Objetos utilizando a linguagem C#\pooControledeNotas\obj\Debug\netcoreapp3.1\pooControledeNotas.pdb

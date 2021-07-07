@@ -17,6 +17,7 @@ namespace pooControledeNotas
             this.Nome = nome;
             this.Nota1 = nota1;
             this.Nota2 = nota2;
+            this.MediaAprovacao = mediaAprovacao;
         }
         public double MediaAprovacao { get; set; }
         public double Media
