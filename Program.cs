@@ -11,6 +11,7 @@ namespace pooControledeNotas
             // m1.ExibirDados();
 
             Console.WriteLine("Controle de matérias");
+            Aluno aluno = new Aluno("Danilo", "danilo@email.com");
             while (op != 5)
             {
                 op = ExibirMenu();
