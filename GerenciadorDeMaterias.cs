@@ -30,7 +30,14 @@ namespace pooControledeNotas
         {
             try
             {
-                materias.Add(materia);
+                if (!(materias.Exists(x => x.Nome.Equals(materia.Nome))))
+                {
+                    materias.Add(materia);
+                }
+                else
+                {
+                    System.Console.WriteLine("Matéria já cadastrada");
+                }
             }
             catch (System.Exception)
             {
@@ -47,6 +54,32 @@ namespace pooControledeNotas
                 m.ExibirDados();
                 System.Console.WriteLine("********");
             }
+        }
+
+        public bool excluirMateria(string Nome)
+        {
+            bool retorno = false;
+            if (this.materias.Exists(x => x.Nome.Equals(Nome)))
+            {
+                retorno = true;
+                this.materias.Remove(this.materias.Find(x => x.Nome.Equals(Nome)));
+            }
+
+            return retorno;
+        }
+
+        public bool alterarMateria(Materia materia)
+        {
+            bool retorno = false;
+            if (this.materias.Exists(x => x.Nome.Equals(materia.Nome)))
+            {
+                retorno = true;
+                Materia materiaNew = (this.materias.Find(x => x.Nome.Equals(materia.Nome)));
+                materiaNew.Nota1 = materia.Nota1;
+                materiaNew.Nota2 = materia.Nota2;
+            }
+
+            return retorno;
         }
     }
 }

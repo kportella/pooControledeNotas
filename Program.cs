@@ -16,8 +16,8 @@ namespace pooControledeNotas
             {
                 Console.WriteLine("Controle de matérias");
                 gerenciador.Estudante.ExibirDados();
-                op = ExibirMenu();
                 Console.Clear();
+                op = ExibirMenu();
                 switch (op)
                 {
                     case 1:
@@ -26,24 +26,73 @@ namespace pooControledeNotas
                         break;
 
                     case 2:
-                        Console.WriteLine("Cadastro de materias");
-                        Console.Write("Materia: ");
-                        NomeMateria = Console.ReadLine();
-                        Console.Write("1 Nota: ");
-                        n1 = Convert.ToDouble(Console.ReadLine());
-                        Console.Write("2 Nota: ");
-                        n2 = Convert.ToDouble(Console.ReadLine());
+                        try
+                        {
+                            Console.WriteLine("Cadastro de materias");
+                            Console.Write("Materia: ");
+                            NomeMateria = Console.ReadLine();
+                            Console.Write("1 Nota: ");
+                            n1 = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("2 Nota: ");
+                            n2 = Convert.ToDouble(Console.ReadLine());
 
-                        materia = new Materia(NomeMateria, n1, n2, mo);
-                        gerenciador.cadastrarMateria(materia);
-                        Console.ReadKey();
+                            materia = new Materia(NomeMateria, n1, n2, mo);
+                            gerenciador.cadastrarMateria(materia);
+                            Console.WriteLine("Materia cadastrada");
+                            Console.ReadKey();
+                        }
+                        catch (System.Exception)
+                        {
+
+                            Console.WriteLine("Materia nao cadastrada, tente novamente");
+                        }
+
                         break;
 
                     case 3:
-                        Console.ReadKey();
+                        try
+                        {
+                            Console.WriteLine("Alterar materia");
+                            Console.Write("Materia: ");
+                            NomeMateria = Console.ReadLine();
+                            Console.Write("1 Nota: ");
+                            n1 = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("2 Nota: ");
+                            n2 = Convert.ToDouble(Console.ReadLine());
+
+                            materia = new Materia(NomeMateria, n1, n2, mo);
+
+                            if (gerenciador.alterarMateria(materia))
+                            {
+                                Console.WriteLine("Materia alterada");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Materia não alterada");
+
+                            }
+                            Console.ReadKey();
+                        }
+                        catch (System.Exception)
+                        {
+
+                            Console.WriteLine("Materia nao alterada, tente novamente");
+                        }
+
                         break;
 
                     case 4:
+                        Console.WriteLine("Excluir uma materia");
+                        Console.Write("Materia: ");
+                        NomeMateria = Console.ReadLine();
+                        if (gerenciador.excluirMateria(NomeMateria))
+                        {
+                            Console.WriteLine("Materia excluida");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Não encontrei a materia");
+                        }
                         Console.ReadKey();
                         break;
                 }
