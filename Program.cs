@@ -7,21 +7,35 @@ namespace pooControledeNotas
         static void Main(string[] args)
         {
             int op = 0;
-            // Materia m1 = new Materia("Matematica", 5, 7, 5);
-            // m1.ExibirDados();
-
+            string NomeMateria = "";
+            double n1 = 0, n2 = 0, mo = 5;
+            Materia materia;
+            GerenciadorDeMaterias gerenciador = new GerenciadorDeMaterias("Danilo", "danilo@email.com");
             Console.WriteLine("Controle de matérias");
-            Aluno aluno = new Aluno("Danilo", "danilo@email.com");
             while (op != 5)
             {
+                Console.WriteLine("Controle de matérias");
+                gerenciador.Estudante.ExibirDados();
                 op = ExibirMenu();
+                Console.Clear();
                 switch (op)
                 {
                     case 1:
+                        gerenciador.listarMaterias();
                         Console.ReadKey();
                         break;
 
                     case 2:
+                        Console.WriteLine("Cadastro de materias");
+                        Console.Write("Materia: ");
+                        NomeMateria = Console.ReadLine();
+                        Console.Write("1 Nota: ");
+                        n1 = Convert.ToDouble(Console.ReadLine());
+                        Console.Write("2 Nota: ");
+                        n2 = Convert.ToDouble(Console.ReadLine());
+
+                        materia = new Materia(NomeMateria, n1, n2, mo);
+                        gerenciador.cadastrarMateria(materia);
                         Console.ReadKey();
                         break;
 
